@@ -9,9 +9,86 @@ body {
 }
 
 header {
-  background-image: url("../Images/MainBg.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../Images/background.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.row{
+  max-width: 1180;  
+  margin:0 auto;
+}
+
+.logo{
+  height: 120px;
+  width: auto;
+  float: left;
+  margin: 20px;
+}
+
+.main-nav{
+  float: right;
+  margin-top: 60px;
+
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+  margin-right: 80px;
+
+}
+
+.main-nav li a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.main-content-header{
+  width:1180px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.Animated-word{
+
+  animation: colorchangedev 1s infinite;
+}
+
+@keyframes colorchangedev{
+  0%{color: red;}
+ 
+  50%{color: coral;}
+  100%{color:crimson;}
+
+
+}
+
+
+
+@media only screen and (max-width:768px){
+  .main-nav{
+    display: none;
+  }
+
+  .mobile-icon{
+    float: right;
+    color: aliceblue;
+  }
+
+  .main-nav li{
+      display: block;
+      float: left;
+      margin-top:10px; 
+
+  }
+
 }

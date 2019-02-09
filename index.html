@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Test Site</title>
-	<meta charset="UTF-8" />
+	<head>
+		<title>Test Site</title>
+		<meta charset="UTF-8" />
 
-	<link rel="stylesheet" type="text/css" href="src/css/styles.css">
-	<script src='src/index.js'>
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src='src/index.js'>
 
-	</script>
-</head>
 
-<body>
-	<div id="app">
+		</script>
+	</head>
 
-		<header>
-			<div class='row'>
-				<nav>
-					<img src='src/Images/Logo.png' class=Logo></img>
-					<ul class='main-nav'>
-						<li><a href='#'>About Us</a></li>
-						<li><a href='#'>Contact</a></li>						
-					</ul>
-				</nav>
-			</div>
-			<div class='main-content-header'>	
-				<h1>Looking for the right <span>Developer?</span></h1>
-				<a href='#'>get started</a>
-			</div>
-		</header>	
-	</div>
-	
-</body>
+	<body>
+		<div id="app">
+			<header>
+				<div class='row'>
+					<nav>
+						<img src='src/Images/whitelogo.png' class=logo></img>
+						<ul class='main-nav' id='navlist'>
+							<li><a href='#'>About Us</a></li>
+							<li><a href='#'>Contact</a></li>						
+						</ul>
+						<a href="#" class="mobile-icon" onclick="slideShow()">
+						<i class='fa fa-bars'></i></a>
+					</nav>
+				</div>
+				<div class='main-content-header'>	
+					<h1>Looking for the right <span class='Animated-word'>Developer?</span></h1>				
+				</div>
+			</header>	
+		</div>
+		
+	</body>
 
 </html>
